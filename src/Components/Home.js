@@ -1,6 +1,10 @@
 
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
 function Home() {
   return (
     <>
@@ -60,95 +64,79 @@ function Home() {
   <h2 className="display-7 text-dark text-uppercase">Mobile Products</h2>
 </div>
 
-        <div className="swiper product-swiper">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item1.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                   </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Iphone 10</a>
-                  </h3>
-                  <span className="item-price text-primary">20,000.00</span>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                     </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Iphone 11</a>
-                  </h3>
-                  <span className="item-price text-primary">60,000.00</span>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item3.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                    </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Iphone 8</a>
-                  </h3>
-                  <span className="item-price text-primary">10,000.00</span>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item4.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                    </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Iphone 13</a>
-                  </h3>
-                  <span className="item-price text-primary">80,000.00</span>
-                </div>
-              </div>
-            </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item5.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                    </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Iphone 12</a>
-                  </h3>
-                  <span className="item-price text-primary">70,000.00</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Swiper
+  modules={[Pagination]}
+  spaceBetween={20}
+  slidesPerView={1}
+  pagination={{ clickable: true }}
+  breakpoints={{
+    640: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 4,
+    },
+  }}
+  className="product-swiper"
+>
+  <SwiperSlide>
+    <div className="product-card position-relative">
+      <div className="image-holder">
+        <img src="images/product-item1.jpg" alt="product-item" className="img-fluid" />
+      </div>
+      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+        <h3 className="card-title text-uppercase">
+          <a href="#">Iphone 10</a>
+        </h3>
+        <span className="item-price text-primary">20,000.00</span>
+      </div>
+    </div>
+  </SwiperSlide>
+
+  <SwiperSlide>
+    <div className="product-card position-relative">
+      <div className="image-holder">
+        <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+      </div>
+      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+        <h3 className="card-title text-uppercase">
+          <a href="#">Iphone 11</a>
+        </h3>
+        <span className="item-price text-primary">60,000.00</span>
+      </div>
+    </div>
+  </SwiperSlide>
+<SwiperSlide>
+    <div className="product-card position-relative">
+      <div className="image-holder">
+        <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+      </div>
+      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+        <h3 className="card-title text-uppercase">
+          <a href="#">Iphone 11</a>
+        </h3>
+        <span className="item-price text-primary">60,000.00</span>
+      </div>
+    </div>
+  </SwiperSlide>
+  <SwiperSlide>
+    <div className="product-card position-relative">
+      <div className="image-holder">
+        <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+      </div>
+      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+        <h3 className="card-title text-uppercase">
+          <a href="#">Iphone 11</a>
+        </h3>
+        <span className="item-price text-primary">60,000.00</span>
+      </div>
+    </div>
+  </SwiperSlide>
+</Swiper>
+    
       </div>
     </div>
     <div className="swiper-pagination position-absolute text-center" />
