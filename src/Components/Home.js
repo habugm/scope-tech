@@ -80,6 +80,7 @@ function Home() {
       slidesPerView: 4,
     },
   }}
+  style={{ paddingBottom: '60px' }}
   className="product-swiper"
 >
   <SwiperSlide>
@@ -112,26 +113,39 @@ function Home() {
 <SwiperSlide>
     <div className="product-card position-relative">
       <div className="image-holder">
-        <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+        <img src="images/product-item3.jpg" alt="product-item" className="img-fluid" />
       </div>
       <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
         <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 11</a>
+          <a href="#">Iphone 8</a>
         </h3>
-        <span className="item-price text-primary">60,000.00</span>
+        <span className="item-price text-primary">6,000.00</span>
       </div>
     </div>
   </SwiperSlide>
   <SwiperSlide>
     <div className="product-card position-relative">
       <div className="image-holder">
-        <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+        <img src="images/product-item4.jpg" alt="product-item" className="img-fluid" />
       </div>
       <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
         <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 11</a>
+          <a href="#">Iphone 13</a>
         </h3>
-        <span className="item-price text-primary">60,000.00</span>
+        <span className="item-price text-primary">80,000.00</span>
+      </div>
+    </div>
+  </SwiperSlide>
+  <SwiperSlide>
+    <div className="product-card position-relative">
+      <div className="image-holder">
+        <img src="images/product-item5.jpg" alt="product-item" className="img-fluid" />
+      </div>
+      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+        <h3 className="card-title text-uppercase">
+          <a href="#">Iphone 12</a>
+        </h3>
+        <span className="item-price text-primary">65,000.00</span>
       </div>
     </div>
   </SwiperSlide>
@@ -139,7 +153,7 @@ function Home() {
     
       </div>
     </div>
-    <div className="swiper-pagination position-absolute text-center" />
+    
   </section>
   <section id="smart-watches" className="product-store padding-large position-relative">
     <div className="container">
