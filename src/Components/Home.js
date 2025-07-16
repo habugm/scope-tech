@@ -56,14 +56,15 @@ function Home() {
   
 </section>
 
-  
-  <section id="mobile-products" className="product-store position-relative padding-large no-padding-top">
+  <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
+
+  <section id="mobile-products" className="product-store position-relative padding-large no-padding-top" style={{ paddingBottom: '20px', paddingTop: '10px' }}>
     <div className="container">
       <div className="row">
-        <div className="display-header d-flex justify-content-center pb-3">
-  <h2 className="display-7 text-dark text-uppercase">Mobile Products</h2>
+        <div className="display-header d-flex justify-content-center pb-0">
+  <h2 className="display-7 text-uppercase mb-1">Mobile Products</h2>
 </div>
-
+<div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
         <Swiper
   modules={[Pagination]}
   spaceBetween={20}
@@ -155,13 +156,14 @@ function Home() {
     </div>
     
   </section>
-  <section id="smart-watches" className="product-store padding-large position-relative">
+  <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
+  <section id="smart-watches" className="product-store position-relative">
     <div className="container">
       <div className="row">
         <div className="display-header d-flex justify-content-center pb-3">
           <h2 className="display-7 text-dark text-uppercase">Smart Watches</h2>
-          
         </div>
+        <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
         <div className="swiper product-watch-swiper">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
