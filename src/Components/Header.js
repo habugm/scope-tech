@@ -1,5 +1,5 @@
 
-
+import { Link } from 'react-router-dom';
 import React from 'react';
 function Header() {
   return (
@@ -7,9 +7,11 @@ function Header() {
      <header id="header" className="site-header header-scrolled position-fixed text-black" style={{ backgroundColor: '#0E87CC' }}>
   <nav id="header-nav" className="navbar navbar-expand-lg px-3 mb-3">
     <div className="container-fluid">
-      <a className="navbar-brand" href="index.html">
+      <Link to='/' className="navbar-brand">
+      
         <img src="images/main-logo.jpg" className="logo" />
-      </a>
+      
+      </Link>
       <button className="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <svg className="navbar-icon">
           <use xlinkHref="#navbar-icon" />

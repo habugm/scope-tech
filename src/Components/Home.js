@@ -77,7 +77,14 @@ function Home() {
           <a href="#">Iphone 10</a>
           
         </h3>
-        <Link to="/productItem1" className='item-price'>Detail</Link>
+        <Link to="/productItem1" className='item-price' style={{
+  padding: '0.5rem 1rem',
+  backgroundColor: '#0E87CC',
+  color: 'white',
+  textDecoration: 'none',
+  borderRadius: '8px',
+  fontWeight: 'bold'
+}}>Detail</Link>
         
       </div>
     </div>
