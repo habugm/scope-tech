@@ -2,7 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 function Home() {
@@ -32,24 +32,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div class="swiper-slide">
-        <div class="container">
-          <div class="row d-flex flex-wrap align-items-center">
-            <div class="col-md-6">
-              <div class="banner-content">
-                <h1 class="display-2 text-uppercase text-dark pb-5">Technology Hack You Won't Get</h1>
-                <a href="shop.html" class="btn btn-medium btn-dark text-uppercase btn-rounded-none">Shop Product</a>
-              </div>
-            </div>
-            <div class="col-md-5">
-              <div class="image-holder">
-                <img src="images/banner-image.png" alt="banner" />
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+  
     </div>
   </div>
 
@@ -92,8 +75,10 @@ function Home() {
       <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
         <h3 className="card-title text-uppercase">
           <a href="#">Iphone 10</a>
+          
         </h3>
-        <span className="item-price text-primary">20,000.00</span>
+        <Link to="/productItem1" className='item-price'>Detail</Link>
+        
       </div>
     </div>
   </SwiperSlide>
