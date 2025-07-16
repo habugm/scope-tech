@@ -4,7 +4,7 @@ import React from 'react';
 function Header() {
   return (
     <>
-     <header id="header" className="site-header header-scrolled position-fixed text-black bg-light">
+     <header id="header" className="site-header header-scrolled position-fixed text-black" style={{ backgroundColor: '#0E87CC' }}>
   <nav id="header-nav" className="navbar navbar-expand-lg px-3 mb-3">
     <div className="container-fluid">
       <a className="navbar-brand" href="index.html">
@@ -43,11 +43,7 @@ function Header() {
               <div className="user-items ps-5">
                 <ul className="d-flex justify-content-end list-unstyled">
                   <li className="search-item pe-3">
-                    <a href="#" className="search-button">
-                      <svg className="search">
-                        <use xlinkHref="#search" />
-                      </svg>
-                    </a>
+                    Naod
                   </li>
                   <li className="pe-3">
                     <a href="#">

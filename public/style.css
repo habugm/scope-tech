@@ -596,12 +596,12 @@ h3.cart-title {
     height: 50px;
 }
 .navbar-nav .nav-item a.nav-link {
-    color: var(--accent-color);
+    color: var(--white-color);
 }
 .navbar-nav .nav-item a.nav-link.active, 
 .navbar-nav .nav-item a.nav-link:focus, 
 .navbar-nav .nav-item a.nav-link:hover {
-    color: var(--primary-color);
+    color: var(--white-color);
 }
 
 /*------------ Offcanvas -------------- */

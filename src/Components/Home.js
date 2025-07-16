@@ -17,9 +17,9 @@ function Home() {
           <div class="row d-flex align-items-center">
             <div class="col-md-6">
               <div class="banner-content">
-                <button class="btn btn-medium btn-dark text-uppercase btn-rounded-none" disabled>SCOPE TECH</button>
+                <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none" disabled>SCOPE TECH ( NAOD )</button>
 
-                <h1 class="display-2 text-uppercase text-dark pb-5">Our Products Are Great.</h1>
+                <h1 class="display-2 text-uppercase text-dark pb-5">Your One-Stop Mobile Destination</h1>
                 
               </div>
             </div>
