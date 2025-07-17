@@ -41,214 +41,282 @@ function Home() {
 
   <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
 
-  <section id="mobile-products" className="product-store position-relative padding-large no-padding-top" style={{ paddingBottom: '20px', paddingTop: '10px' }}>
-    <div className="container">
-      <div className="row">
-        <div className="display-header d-flex justify-content-center pb-0">
-  <h2 className="display-7 text-uppercase mb-1">Mobile Products</h2>
-</div>
-<div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
-        <Swiper
-  modules={[Pagination]}
-  spaceBetween={20}
-  slidesPerView={1}
-  pagination={{ clickable: true }}
-  breakpoints={{
-    640: {
-      slidesPerView: 2,
-    },
-    768: {
-      slidesPerView: 3,
-    },
-    1024: {
-      slidesPerView: 4,
-    },
-  }}
-  style={{ paddingBottom: '60px' }}
-  className="product-swiper"
->
-  <SwiperSlide>
-    <div className="product-card position-relative">
-      <div className="image-holder">
-        <img src="images/product-item1.jpg" alt="product-item" className="img-fluid" />
-      </div>
-      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-        <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 10</a>
-          
-        </h3>
-        <Link to="/productItem1" className='item-price' style={{
-  padding: '0.5rem 1rem',
-  backgroundColor: '#0E87CC',
-  color: 'white',
-  textDecoration: 'none',
-  borderRadius: '8px',
-  fontWeight: 'bold'
-}}>Detail</Link>
-        
-      </div>
-    </div>
-  </SwiperSlide>
 
-  <SwiperSlide>
-    <div className="product-card position-relative">
-      <div className="image-holder">
-        <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+<section id="mobile-products" className="product-store position-relative padding-large no-padding-top" style={{ paddingBottom: '20px', paddingTop: '10px' }}>
+  <div className="container">
+    <div className="row">
+      <div className="display-header d-flex justify-content-center pb-0">
+        <h2 className="display-7 text-uppercase mb-1">Mobile Products</h2>
       </div>
-      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-        <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 11</a>
-        </h3>
-        <span className="item-price text-primary">60,000.00</span>
-      </div>
-    </div>
-  </SwiperSlide>
-<SwiperSlide>
-    <div className="product-card position-relative">
-      <div className="image-holder">
-        <img src="images/product-item3.jpg" alt="product-item" className="img-fluid" />
-      </div>
-      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-        <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 8</a>
-        </h3>
-        <span className="item-price text-primary">6,000.00</span>
-      </div>
-    </div>
-  </SwiperSlide>
-  <SwiperSlide>
-    <div className="product-card position-relative">
-      <div className="image-holder">
-        <img src="images/product-item4.jpg" alt="product-item" className="img-fluid" />
-      </div>
-      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-        <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 13</a>
-        </h3>
-        <span className="item-price text-primary">80,000.00</span>
-      </div>
-    </div>
-  </SwiperSlide>
-  <SwiperSlide>
-    <div className="product-card position-relative">
-      <div className="image-holder">
-        <img src="images/product-item5.jpg" alt="product-item" className="img-fluid" />
-      </div>
-      <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-        <h3 className="card-title text-uppercase">
-          <a href="#">Iphone 12</a>
-        </h3>
-        <span className="item-price text-primary">65,000.00</span>
-      </div>
-    </div>
-  </SwiperSlide>
-</Swiper>
-    
-      </div>
-    </div>
-    
-  </section>
-  <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
-  <section id="smart-watches" className="product-store position-relative">
-    <div className="container">
+      <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto' }} />
+      
+      {/* Start of Grid */}
       <div className="row">
-        <div className="display-header d-flex justify-content-center pb-3">
-          <h2 className="display-7 text-dark text-uppercase">Smart Watches</h2>
+        {/* Product Item */}
+        <div className="col-6 col-lg-3 mb-4">
+  <div className="product-card position-relative">
+    <div className="image-holder">
+      <img src="images/product-item1.jpg" alt="product-item" className="img-fluid" />
+    </div>
+
+    {/* Blue box containing all details */}
+    <div className="card-body text-center text-white" style={{
+      backgroundColor: '#0E87CC',
+      padding: '1rem',
+      borderRadius: '0 0 10px 10px' // rounded bottom corners
+    }}>
+      <h5 className="card-title text-uppercase mb-2">Iphone 10</h5>
+      <p className="mb-2" style={{color:'white'}}>64GB - Space Gray</p>
+      <Link to="/productItem1" className="item-price" style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'black',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '10px'
+      }}>
+        Detail
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+
+        <div className="col-6 col-lg-3 mb-4">
+  <div className="product-card position-relative">
+    <div className="image-holder">
+      <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+    </div>
+
+    {/* Blue box containing all details */}
+    <div className="card-body text-center text-white" style={{
+      backgroundColor: '#0E87CC',
+      padding: '1rem',
+      borderRadius: '0 0 10px 10px' // rounded bottom corners
+    }}>
+      <h5 className="card-title text-uppercase mb-2">Iphone 11</h5>
+      <p className="mb-2" style={{color:'white'}}>64GB - Space Gray</p>
+      <Link to="/productItem1" className="item-price" style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'black',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '10px'
+      }}>
+        Detail
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+
+      <div className="col-6 col-lg-3 mb-4">
+  <div className="product-card position-relative">
+    <div className="image-holder">
+      <img src="images/product-item2.jpg" alt="product-item" className="img-fluid" />
+    </div>
+
+    {/* Blue box containing all details */}
+    <div className="card-body text-center text-white" style={{
+      backgroundColor: '#0E87CC',
+      padding: '1rem',
+      borderRadius: '0 0 10px 10px' // rounded bottom corners
+    }}>
+      <h5 className="card-title text-uppercase mb-2">Iphone 12</h5>
+      <p className="mb-2" style={{color:'white'}}>64GB - Space Gray</p>
+      <Link to="/productItem1" className="item-price" style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'black',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '10px'
+      }}>
+        Detail
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+
+      <div className="col-6 col-lg-3 mb-4">
+  <div className="product-card position-relative">
+    <div className="image-holder">
+      <img src="images/product-item4.jpg" alt="product-item" className="img-fluid" />
+    </div>
+
+    {/* Blue box containing all details */}
+    <div className="card-body text-center text-white" style={{
+      backgroundColor: '#0E87CC',
+      padding: '1rem',
+      borderRadius: '0 0 10px 10px' // rounded bottom corners
+    }}>
+      <h5 className="card-title text-uppercase mb-2">Iphone 13</h5>
+      <p className="mb-2" style={{color:'white'}}>64GB - Space Gray</p>
+      <Link to="/productItem1" className="item-price" style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'black',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '10px'
+      }}>
+        Detail
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+
+       <div className="col-6 col-lg-3 mb-4">
+  <div className="product-card position-relative">
+    <div className="image-holder">
+      <img src="images/product-item5.jpg" alt="product-item" className="img-fluid" />
+    </div>
+
+    {/* Blue box containing all details */}
+    <div className="card-body text-center text-white" style={{
+      backgroundColor: '#0E87CC',
+      padding: '1rem',
+      borderRadius: '0 0 10px 10px' // rounded bottom corners
+    }}>
+      <h5 className="card-title text-uppercase mb-2">Iphone 14</h5>
+      <p className="mb-2" style={{color:'white'}}>64GB - Space Gray</p>
+      <Link to="/productItem1" className="item-price" style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'black',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '10px'
+      }}>
+        Detail
+      </Link>
+    </div>
+  </div>
+</div>
+
+
+
+      </div>
+      {/* End of Grid */}
+    </div>
+  </div>
+</section>
+
+
+
+   <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
+  <section id="smart-watches" className="product-store position-relative" style={{ paddingBottom: '20px', paddingTop: '10px' }}>
+  <div className="container">
+    <div className="row">
+      <div className="display-header d-flex justify-content-center pb-3">
+        <h2 className="display-7 text-dark text-uppercase">Smart Watches</h2>
+      </div>
+      <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto' }} />
+
+      {/* Start of Grid Layout */}
+      <div className="row">
+        {/* Watch 1 */}
+        <div className="col-6 col-lg-3 mb-4">
+          <div className="product-card position-relative">
+            <div className="image-holder">
+              <img src="images/product-item6.jpg" alt="product-item" className="img-fluid" />
+            </div>
+            <div className="cart-concern position-absolute">
+              <div className="cart-button d-flex"></div>
+            </div>
+            <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h3 className="card-title text-uppercase"><a href="#">Pink watch</a></h3>
+              <span className="item-price text-primary">8700.00</span>
+            </div>
+          </div>
         </div>
-        <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
-        <div className="swiper product-watch-swiper">
-          <div className="swiper-wrapper">
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item6.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                    </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Pink watch</a>
-                  </h3>
-                  <span className="item-price text-primary">8700.00</span>
-                </div>
-              </div>
+
+        {/* Watch 2 */}
+        <div className="col-6 col-lg-3 mb-4">
+          <div className="product-card position-relative">
+            <div className="image-holder">
+              <img src="images/product-item7.jpg" alt="product-item" className="img-fluid" />
             </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item7.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                   </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">Heavy watch</a>
-                  </h3>
-                  <span className="item-price text-primary">6800.00</span>
-                </div>
-              </div>
+            <div className="cart-concern position-absolute">
+              <div className="cart-button d-flex"></div>
             </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item8.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                   </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">spotted watch</a>
-                  </h3>
-                  <span className="item-price text-primary">7500.00</span>
-                </div>
-              </div>
+            <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h3 className="card-title text-uppercase"><a href="#">Heavy watch</a></h3>
+              <span className="item-price text-primary">6800.00</span>
             </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item9.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                   </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">black watch</a>
-                  </h3>
-                  <span className="item-price text-primary">6500.00</span>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        {/* Watch 3 */}
+        <div className="col-6 col-lg-3 mb-4">
+          <div className="product-card position-relative">
+            <div className="image-holder">
+              <img src="images/product-item8.jpg" alt="product-item" className="img-fluid" />
             </div>
-            <div className="swiper-slide">
-              <div className="product-card position-relative">
-                <div className="image-holder">
-                  <img src="images/product-item10.jpg" alt="product-item" className="img-fluid" />
-                </div>
-                <div className="cart-concern position-absolute">
-                  <div className="cart-button d-flex">
-                    </div>
-                </div>
-                <div className="card-detail d-flex justify-content-between pt-3">
-                  <h3 className="card-title text-uppercase">
-                    <a href="#">black watch</a>
-                  </h3>
-                  <span className="item-price text-primary">7500.00</span>
-                </div>
-              </div>
+            <div className="cart-concern position-absolute">
+              <div className="cart-button d-flex"></div>
+            </div>
+            <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h3 className="card-title text-uppercase"><a href="#">Spotted watch</a></h3>
+              <span className="item-price text-primary">7500.00</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Watch 4 */}
+        <div className="col-6 col-lg-3 mb-4">
+          <div className="product-card position-relative">
+            <div className="image-holder">
+              <img src="images/product-item9.jpg" alt="product-item" className="img-fluid" />
+            </div>
+            <div className="cart-concern position-absolute">
+              <div className="cart-button d-flex"></div>
+            </div>
+            <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h3 className="card-title text-uppercase"><a href="#">Black watch</a></h3>
+              <span className="item-price text-primary">6500.00</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Watch 5 */}
+        <div className="col-6 col-lg-3 mb-4">
+          <div className="product-card position-relative">
+            <div className="image-holder">
+              <img src="images/product-item10.jpg" alt="product-item" className="img-fluid" />
+            </div>
+            <div className="cart-concern position-absolute">
+              <div className="cart-button d-flex"></div>
+            </div>
+            <div className="card-detail d-flex justify-content-between align-items-baseline pt-3">
+              <h3 className="card-title text-uppercase"><a href="#">Black watch</a></h3>
+              <span className="item-price text-primary">7500.00</span>
             </div>
           </div>
         </div>
       </div>
+      {/* End of Grid Layout */}
     </div>
-    <div className="swiper-pagination position-absolute text-center" />
-  </section>
+  </div>
+</section>
+
   
    
   <section id="subscribe" className="container-grid padding-large position-relative overflow-hidden">
@@ -273,67 +341,7 @@ function Home() {
       </div>
     </div>
   </section>
-  <section id="instagram" className="padding-large overflow-hidden no-padding-top">
-    <div className="container">
-      <div className="row">
-        <div className="display-header text-uppercase text-dark text-center pb-3">
-          <h2 className="display-7">Shop Our Insta</h2>
-        </div>
-        <div className="d-flex flex-wrap">
-          <figure className="instagram-item pe-2">
-            <a href="https://templatesjungle.com/" className="image-link position-relative">
-              <img src="images/insta-item1.jpg" alt="instagram" className="insta-image" />
-              <div className="icon-overlay position-absolute d-flex justify-content-center">
-                <svg className="instagram">
-                  <use xlinkHref="#instagram" />
-                </svg>
-              </div>
-            </a>
-          </figure>
-          <figure className="instagram-item pe-2">
-            <a href="https://templatesjungle.com/" className="image-link position-relative">
-              <img src="images/insta-item2.jpg" alt="instagram" className="insta-image" />
-              <div className="icon-overlay position-absolute d-flex justify-content-center">
-                <svg className="instagram">
-                  <use xlinkHref="#instagram" />
-                </svg>
-              </div>
-            </a>
-          </figure>
-          <figure className="instagram-item pe-2">
-            <a href="https://templatesjungle.com/" className="image-link position-relative">
-              <img src="images/insta-item3.jpg" alt="instagram" className="insta-image" />
-              <div className="icon-overlay position-absolute d-flex justify-content-center">
-                <svg className="instagram">
-                  <use xlinkHref="#instagram" />
-                </svg>
-              </div>
-            </a>
-          </figure>
-          <figure className="instagram-item pe-2">
-            <a href="https://templatesjungle.com/" className="image-link position-relative">
-              <img src="images/insta-item4.jpg" alt="instagram" className="insta-image" />
-              <div className="icon-overlay position-absolute d-flex justify-content-center">
-                <svg className="instagram">
-                  <use xlinkHref="#instagram" />
-                </svg>
-              </div>
-            </a>
-          </figure>
-          <figure className="instagram-item pe-2">
-            <a href="https://templatesjungle.com/" className="image-link position-relative">
-              <img src="images/insta-item5.jpg" alt="instagram" className="insta-image" />
-              <div className="icon-overlay position-absolute d-flex justify-content-center">
-                <svg className="instagram">
-                  <use xlinkHref="#instagram" />
-                </svg>
-              </div>
-            </a>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 </div>
 
     </>
