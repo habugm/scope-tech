@@ -212,6 +212,36 @@ function Home() {
 </div>
 
 
+<div className="col-6 col-lg-3 mb-4">
+  <div className="product-card position-relative">
+    <div className="image-holder">
+      <img src="images/product-item1.jpg" alt="product-item" className="img-fluid" />
+    </div>
+
+    {/* Blue box containing all details */}
+    <div className="card-body text-center text-white" style={{
+      backgroundColor: '#0E87CC',
+      padding: '1rem',
+      borderRadius: '0 0 10px 10px' // rounded bottom corners
+    }}>
+      <h5 className="card-title text-uppercase mb-2">Iphone 15</h5>
+      <p className="mb-2" style={{color:'white'}}>64GB - Space Gray</p>
+      <Link to="/productItem1" className="item-price" style={{
+        padding: '0.5rem 1rem',
+        backgroundColor: 'black',
+        color: 'white',
+        textDecoration: 'none',
+        borderRadius: '8px',
+        fontWeight: 'bold',
+        display: 'inline-block',
+        marginTop: '10px'
+      }}>
+        Detail
+      </Link>
+    </div>
+  </div>
+</div>
+
 
       </div>
       {/* End of Grid */}

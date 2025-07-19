@@ -8,10 +8,14 @@ function Header() {
   <nav id="header-nav" className="navbar navbar-expand-lg px-3 mb-3">
     <div className="container-fluid">
       <Link to='/' className="navbar-brand">
-      
-        <img src="images/main-logo.jpg" className="logo" />
-      
-      </Link>
+  <img 
+    src="images/SCOPE.png" 
+    className="img-fluid logo" 
+    alt="Logo" 
+    style={{ maxHeight: '60px' }} 
+  />
+</Link>
+
       <button className="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
         <svg className="navbar-icon">
           <use xlinkHref="#navbar-icon" />
