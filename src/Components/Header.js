@@ -4,76 +4,48 @@ import React from 'react';
 function Header() {
   return (
     <>
-     <header id="header" className="site-header header-scrolled position-fixed text-black" style={{ backgroundColor: '#0E87CC' }}>
-  <nav id="header-nav" className="navbar navbar-expand-lg px-3 mb-3">
-    <div className="container-fluid">
-      <Link to='/' className="navbar-brand">
-  <img 
-    src="images/SCOPE.png" 
-    className="img-fluid logo" 
-    alt="Logo" 
-    style={{ maxHeight: '60px' }} 
-  />
-</Link>
+     <header
+  id="header"
+  className="site-header header-scrolled position-fixed w-100 text-black"
+  style={{ backgroundColor: '#0E87CC', zIndex: 1050 }}
+>
+  <nav className="navbar px-3 mb-3">
+    <div
+      className="container-fluid d-flex align-items-center flex-nowrap overflow-auto"
+      style={{ whiteSpace: 'nowrap', gap: '2rem' }}
+    >
+      {/* LOGO */}
+      <Link to='/' className="navbar-brand me-3 flex-shrink-0">
+        <img
+          src="images/SCOPE.png"
+          className="img-fluid logo"
+          alt="Logo"
+          style={{ maxHeight: '60px' }}
+        />
+      </Link>
 
-      <button className="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <svg className="navbar-icon">
-          <use xlinkHref="#navbar-icon" />
-        </svg>
-      </button>
-      <div className="offcanvas offcanvas-end" tabIndex={-1} id="bdNavbar" aria-labelledby="bdNavbarOffcanvasLabel">
-        <div className="offcanvas-header px-4 pb-0">
-          <a className="navbar-brand" href="index.html">
-            <img src="images/main-logo.png" className="logo" />
-          </a>
-          <button type="button" className="btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close" data-bs-target="#bdNavbar" />
-        </div>
-        <div className="offcanvas-body">
-          <ul id="navbar" className="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
-            <li className="nav-item">
-              <a className="nav-link me-4 active" href="#billboard">Home</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link me-4" href="#company-services">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link me-4" href="#mobile-products">Products</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link me-4" href="#smart-watches">Watches</a>
-            </li>
-            
-            
-           
-            <li className="nav-item">
-              <div className="user-items ps-5">
-                <ul className="d-flex justify-content-end list-unstyled">
-                  <li className="search-item pe-3">
-                    Naod
-                  </li>
-                  <li className="pe-3">
-                    <a href="#">
-                      <svg className="user">
-                        <use xlinkHref="#user" />
-                      </svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="cart.html">
-                      <svg className="cart">
-                        <use xlinkHref="#cart" />
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      {/* MENU */}
+      <ul className="navbar-nav d-flex flex-row align-items-center mb-0" style={{ gap: '1.5rem' }}>
+        {/* HIDDEN ON SMALL SCREENS */}
+        <li className="nav-item d-none d-md-block">
+          <a className="nav-link text-white" href="#billboard">Home</a>
+        </li>
+
+        <li className="nav-item">
+          <a className="nav-link text-white" href="#mobile-products">Mobiles</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-white" href="#smart-watches">Watches</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link text-white" href="#earphones">Earphones</a>
+        </li>
+      </ul>
+      
     </div>
   </nav>
 </header>
+
 
       
     </>
