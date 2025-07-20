@@ -34,7 +34,7 @@ function Home() {
 </button>
 
 
-                <h1 className="display-2 text-uppercase text-white pb-5">
+                <h1 className="display-2 text-uppercase tech-heading pb-5">
                   Your One-Stop Mobile Destination
                 </h1>
               </div>

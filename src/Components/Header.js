@@ -15,7 +15,7 @@ function Header() {
   style={{ whiteSpace: 'nowrap', gap: '2rem' }}
 >
   {/* LOGO */}
-  <a href="#billboard" className="navbar-brand me-3 flex-shrink-0">
+  <a href="/#billboard" className="navbar-brand me-3 flex-shrink-0">
     <img
       src="images/SCOPE.png"
       className="img-fluid logo"
