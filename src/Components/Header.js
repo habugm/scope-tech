@@ -15,14 +15,15 @@ function Header() {
       style={{ whiteSpace: 'nowrap', gap: '2rem' }}
     >
       {/* LOGO */}
-      <Link to='/' className="navbar-brand me-3 flex-shrink-0">
+      <a href="#billboard" className="navbar-brand me-3 flex-shrink-0">
         <img
           src="images/SCOPE.png"
           className="img-fluid logo"
           alt="Logo"
           style={{ maxHeight: '60px' }}
+          
         />
-      </Link>
+      </a>
 
       {/* MENU */}
       <ul className="navbar-nav d-flex flex-row align-items-center mb-0" style={{ gap: '1.5rem' }}>

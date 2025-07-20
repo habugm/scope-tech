@@ -670,7 +670,30 @@ function Home() {
 </section>
 
    
-  <section id="subscribe" className="container-grid padding-large position-relative overflow-hidden">
+ 
+  
+  <div className="container py-5"  style={{color:'white'}}>
+      <h2 className="text-center mb-4">Our Shop Location</h2>
+
+      {/* Shop Info */}
+      <div className="text-center mb-4">
+        <h5 className="mb-1">SCOPE Mobile Store</h5>
+        <p className="mb-0">Mekelle, Tigray, Ethiopia</p>
+        <p>Phone: +251 945 51 38 93</p>
+      </div>
+
+      {/* Google Maps Embed */}
+      <div className="ratio ratio-16x9 shadow rounded overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.818089310909!2d39.469633274146176!3d13.48530430340965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x166afd79b5c50ddf%3A0xa01f04a03fa5eab!2sScope%20Tech!5e0!3m2!1sen!2set!4v1753009122898!5m2!1sen!2set"
+          allowFullScreen
+          loading="lazy"
+          title="Shop Location"
+          style={{ border: 0 }}
+        ></iframe>
+      </div>
+    </div>
+ <section id="subscribe" className="container-grid padding-large position-relative overflow-hidden">
     <div className="container">
       <div className="row">
         <div className="subscribe-content bg-dark d-flex flex-wrap justify-content-center align-items-center padding-medium">
@@ -692,7 +715,7 @@ function Home() {
       </div>
     </div>
   </section>
-  
+
 </div>
 
     </>
