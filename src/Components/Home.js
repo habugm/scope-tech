@@ -8,36 +8,51 @@ import 'swiper/css/pagination';
 function Home() {
   return (
     <>
-      <div style={{backgroundColor:'#1b2a30ff'}}>
-  <section id="billboard" class="position-relative overflow-hidden bg-light-blue">
-  <div class="swiper main-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="container">
-          <div class="row d-flex align-items-center">
-            <div class="col-md-6">
-              <div class="banner-content">
-                <button class="btn btn-medium btn-primary text-uppercase btn-rounded-none" disabled>SCOPE TECH ( NAOD )</button>
+      <div style={{backgroundColor:'#0F111A'}}>
+ 
+ <section
+  id="billboard"
+  className="position-relative overflow-hidden"
+  style={{
+    background: 'linear-gradient(135deg, #0F111A, #0E87CC)',
+    color: 'white',
+    paddingTop:'120px',
+  }}
+>
+  <div className="swiper main-swiper">
+    <div className="swiper-wrapper">
+      <div className="swiper-slide">
+        <div className="container">
+          <div className="row d-flex align-items-center">
+            <div className="col-md-6">
+              <div className="banner-content">
+                <button
+  className="btn btn-medium btn-primary text-uppercase btn-rounded-none tech-btn-alt"
+  disabled
+>
+  SCOPE TECH ( NAOD )
+</button>
 
-                <h1 class="display-2 text-uppercase text-dark pb-5">Your One-Stop Mobile Destination</h1>
-                
+
+                <h1 className="display-2 text-uppercase text-white pb-5">
+                  Your One-Stop Mobile Destination
+                </h1>
               </div>
             </div>
-            <div class="col-md-5">
-              <div class="image-holder">
-                <img src="images/ab.jpg" alt="banner" />
 
+            <div className="col-md-5">
+              <div className="image-holder">
+                <img src="images/ab2.jpg" alt="banner" className="img-fluid" />
               </div>
             </div>
           </div>
         </div>
       </div>
-  
     </div>
   </div>
-
-  
 </section>
+
+
 
   <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto'}} />
 
@@ -46,7 +61,8 @@ function Home() {
   <div className="container">
     <div className="row">
       <div className="display-header d-flex justify-content-center pb-0">
-        <h2 className="display-7 text-uppercase mb-1" style={{color:'white'}}>Mobile Products</h2>
+        <h2 className="display-7 text-uppercase mb-1 tech-title">Mobile Products</h2>
+
       </div>
       <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto' }} />
       
@@ -257,7 +273,7 @@ function Home() {
   <div className="container">
     <div className="row">
       <div className="display-header d-flex justify-content-center pb-0">
-        <h2 className="display-7 text-uppercase mb-1" style={{color:'white'}}>Smart Watches</h2>
+        <h2 className="display-7 text-uppercase mb-1 tech-title">Smart Watches</h2>
       </div>
       <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto' }} />
       
@@ -466,7 +482,7 @@ function Home() {
   <div className="container">
     <div className="row">
       <div className="display-header d-flex justify-content-center pb-0">
-        <h2 className="display-7 text-uppercase mb-1" style={{color:'white'}}>Earphones</h2>
+        <h2 className="display-7 text-uppercase mb-1 tech-title2">Earphones</h2>
       </div>
       <div style={{ height: '2px', width: '50%', backgroundColor: '#ADD8E6', margin: '10px auto' }} />
       

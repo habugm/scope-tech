@@ -72,6 +72,223 @@ CSS STRUCTURE:
 html {
   box-sizing: border-box;
 }
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  color: #00f;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: glitch 2s infinite;
+  filter: drop-shadow(0 0 2px #0ff);
+}
+
+.glitch-text::before,
+.glitch-text::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  color: #0ff;
+  z-index: -1;
+}
+
+.glitch-text::before {
+  animation: glitchTop 1s infinite linear alternate-reverse;
+}
+
+.glitch-text::after {
+  animation: glitchBottom 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch {
+  0% {
+    transform: none;
+  }
+  20% {
+    transform: skewX(5deg);
+  }
+  40% {
+    transform: skewX(-5deg);
+  }
+  60% {
+    transform: skewX(3deg);
+  }
+  80% {
+    transform: skewX(-3deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+@keyframes glitchTop {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  10% {
+    clip: rect(0, 9999px, 5px, 0);
+  }
+  20% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  30% {
+    clip: rect(5px, 9999px, 10px, 0);
+  }
+  40% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  50% {
+    clip: rect(3px, 9999px, 8px, 0);
+  }
+  60% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+}
+
+@keyframes glitchBottom {
+  0% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  10% {
+    clip: rect(10px, 9999px, 15px, 0);
+  }
+  20% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  30% {
+    clip: rect(8px, 9999px, 12px, 0);
+  }
+  40% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+  50% {
+    clip: rect(10px, 9999px, 14px, 0);
+  }
+  60% {
+    clip: rect(0, 9999px, 0, 0);
+  }
+}
+
+
+.tech-title2 {
+  color: #00ffff;
+  font-family: 'Courier New', monospace;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00ffff;
+  width: 0;
+  animation: typing2 2s steps(20, end) forwards, flicker 3s infinite;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+@keyframes typing2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch; /* adjust depending on your text length */
+  }
+}
+
+
+
+.tech-title {
+  color: #00ffff;
+  font-family: 'Courier New', monospace;
+  font-size: 2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #00ffff;
+  width: 0;
+  animation: typing 2s steps(20, end) forwards, flicker 3s infinite;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 16ch; /* adjust depending on your text length */
+  }
+}
+
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.5;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0.3;
+  }
+  25%, 95% {
+    opacity: 1;
+  }
+}
+
+
+
+
+.tech-btn-alt {
+  position: relative;
+  background-color: #0a0a0a; /* almost black */
+  color: #00ffff; /* neon cyan text */
+  border: 2px solid #00ffff;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  padding: 0.5rem 1.25rem;
+  text-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff;
+  transition: box-shadow 0.3s ease, color 0.3s ease;
+  cursor: not-allowed; /* since disabled */
+  overflow: hidden;
+  border-radius: 0;
+  user-select: none;
+  box-shadow:
+    0 0 8px #00ffff,
+    inset 0 0 10px #00ffff;
+}
+
+.tech-btn-alt::before {
+  content: '';
+  position: absolute;
+  top: -4px; left: -4px; right: -4px; bottom: -4px;
+  border-radius: inherit;
+  box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px #00ffff,
+    0 0 60px #00ffff;
+  opacity: 0.5;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.tech-btn-alt:disabled {
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
 body {
   font-family: var(--body-font);
   font-size: 14px;
